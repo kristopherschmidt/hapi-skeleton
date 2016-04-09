@@ -1,0 +1,17 @@
+{
+  "name": "subs3api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "dependencies": {
+    "boom": "3.x.x",
+    "confidence": "1.x.x",
+    "glue": "3.x.x",
+    "hapi": "13.x.x",
+    "joi": "8.x.x",
+  }
+}
