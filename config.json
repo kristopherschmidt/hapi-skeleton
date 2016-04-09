@@ -1,19 +1,7 @@
 {
     "server": {
         "app": {
-            "appName": "pingoo flight tracking"
-        },
-        "debug": {
-            "$filter": "env",
-            "$base": {
-                "request": ["error"]
-            },
-            "$default": {
-                "log": ["info", "error", "connection", "client"]
-            },
-            "production": {
-                "log": ["error"]
-            }
+            "appName": "hapi-skeleton"
         }
     },
     "connections": {
