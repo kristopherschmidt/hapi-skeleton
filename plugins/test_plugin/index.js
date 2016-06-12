@@ -1,18 +1,13 @@
 'use strict';
 
+var routes = require('./routes');
+
 exports.register = function (server, options, next) {
-
-    server.route({
-        method: 'GET',
-        path: '/counter',
-        handler: function (request, reply) {
-       	  reply({ counter: 1337 }); 
-	}
-    });
-
+    server.route(routes(options));
     next();
 };
 
 exports.register.attributes = {
-    pkg: require('./package')
+    pkg: require('./package.json')
 };
+
